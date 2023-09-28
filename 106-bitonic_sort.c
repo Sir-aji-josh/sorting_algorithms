@@ -22,16 +22,16 @@ void bitonic_sort(int *array, size_t size)
 void bitonic_compare(bool up, int *x, size_t size)
 {
 	size_t dist, i;
-	int tmp;
+	int temp;
 
 	dist = size / 2;
 	for (i = 0; i < dist; i++)
 	{
 		if ((x[i] > x[i + dist]) == up)
 		{
-			tmp = x[i];
+			temp = x[i];
 			x[i] = x[i + dist];
-			x[i + dist] = tmp;
+			x[i + dist] = temp;
 		}
 	}
 }
