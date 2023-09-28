@@ -1,4 +1,5 @@
 #include "sort.h"
+#include <stdio.h>
 
 /*
  * File: 106-bitonic_sort.c
@@ -80,7 +81,6 @@ void bitonic_seq(int *array, size_t size, size_t start, size_t seq, char flow)
                 print_array(array + start, seq);
         }
 }
-
 
 
 
