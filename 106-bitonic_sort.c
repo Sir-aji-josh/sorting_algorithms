@@ -21,14 +21,12 @@ void bitonic_sort(int *array, size_t size)
  */
 void swap(int *a, int *b)
 {
-	if (*a != *b)
-	{
-		*a = *a + *b;
-		*b = *a - *b;
-		*a = *a - *b;
-	}
-}
-
+    if (*a != *b)
+    {
+        *a = *a + *b;
+        *b = *a - *b;
+        *a = *a - *b;
+    }
 /**
  * bitonic_compare – Compares of bitonically
  * @up: True if UP sorting
